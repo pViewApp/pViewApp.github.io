@@ -1,21 +1,37 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+}
 
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 30%;
-  }
-  
 
-  .footer {
-    padding: 20px;
-    min-height: 10vh;
-    font-size: 9pt;
-    background-color: #e7e7e7;
-    color: black;
- }
-  .btn {
-    margin-bottom: 10px;
-  }
- .text-middle-align {
-   text-align: center;
- }
+.footer,
+.footer a {
+
+  font-size: 9pt;
+
+  color: white;
+}
+
+.footer {
+  padding: 20px;
+  min-height: 10vh;
+}
+
+.footer,
+.footer *::selection {
+  background-color: white;
+}
+
+.footer,
+.footer *::-moz-selection {
+  background-color: white;
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+.text-middle-align {
+  text-align: center;
+}
