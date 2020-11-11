@@ -15,15 +15,15 @@ if ($row = $results->fetch_assoc())
 	$exeLinkEnding = $row['downloadLink'];
 start("Home");
 ?>
-<div class="jumbotron" style="height: 280px;">
+<div class="jumbotron" style="height: 220px;">
 	<h1 class="display-4" style="font-size: 25pt;">pView helps optimize your investment portfolio.</h1>
 	<p class="lead">
 	</p>
 	<hr class="my-4">
 	<div class="btn-group" role="group">
-		<a class="btn btn-primary btn-lg"
+		<a class="btn btn-primary btn-lg" style="font-size: 12pt;"
 			onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $zipLinkEnding; ?>');"><i
-				class="fab fa-windows"></i> Download for Windows</a><a class="btn btn-lg btn-secondary"
+				class="fab fa-windows"></i> Download for Windows</a><a class="btn btn-lg btn-secondary" style="font-size: 12pt;"
 			href="/download.php" role="button">More
 			Downloads <i class="fas fa-angle-double-right"></i></a>
 	</div>
@@ -49,8 +49,8 @@ start("Home");
 		<tr>
 			<th style="width: 200px;">Features</th>
 			<th>pView</th>
-			<th>Broker website</th>
-			<th>3rd Party website</th>
+			<th>Broker</th>
+			<th>3rd Party</th>
 		</tr>
 		<tr>
 			<td>Free</td>
