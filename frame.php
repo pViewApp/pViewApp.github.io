@@ -60,7 +60,7 @@ END;
 }
 function footer() {
     $footer = '
-        <footer class="mt-auto container-fluid footer dark bg-primary">
+        <footer class="mt-auto container-fluid footer dark bg-primary" style="width="100%">
             <div class="container-fluid text-center text-md-left">
 
                 <!-- Grid row -->
@@ -126,7 +126,7 @@ function footer() {
             <!-- Footer Links -->
 
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3"><img src="/favicon.ico" alt="pView logo"  width="21pt" style="margin-right: 20px">©pView, 2020. All rights reserved.
+            <div class="footer-copyright text-center py-3">©pView, 2020. All rights reserved.
             </div>
             <!-- Copyright -->
 

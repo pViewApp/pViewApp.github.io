@@ -12,7 +12,7 @@ start("About");
 <div class="container">
   <hr class="my-4">
 
-  <p>pView is a Java project, also for real world use. It is under development.</p>
+  <pre>pView is a school JavaFX project, being developed. The website uses Twitter Bootstrap.</pre>
 
   <div class="container">
 
@@ -23,9 +23,11 @@ start("About");
 </div>
 <div class="container">
   <hr class="my-4">
-  <p>Lazy Sheep: Java programmer, developing pView.<br>
-  Chocolate Dude: Html developer, maintaining website.<br>
-  Big Bunny: DIY investor, suggesting features.</p>
+  <pre>
+Lazy Sheep:     Java programmer.
+Chocolate Dude: Html developer.
+Big Bunny:      Tester.
+  </pre>
 </div>
 <?php
 footer();

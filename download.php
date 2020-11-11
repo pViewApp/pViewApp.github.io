@@ -51,7 +51,7 @@ start("Downloads");
 				<img class="card-img-top" style="height: 120px; width: 80px" src="/fa/svgs/solid/file-archive.svg"
 					alt="zip">
 				<h5 class="card-title">Zip <span class="badge badge-secondary">Recommended</span></h5>
-				<p class="card-text">Click on the download button to download the windows Zip.</p>
+				<p class="card-text">Works on Pc.</p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $zipLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
@@ -61,7 +61,7 @@ start("Downloads");
 			<div class="card-body">
 				<img class="card-img-top" style="height: 120px; width: 80px" src="/fa/svgs/brands/java.svg" alt="java">
 				<h5 class="card-title">Jar <span class="badge badge-secondary">For Power Users</span></h5>
-				<p class="card-text">Click on the download button to download the windows Jar.</p>
+				<p class="card-text">Light weight bundle for those who have Java.</p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $jarLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
@@ -72,7 +72,7 @@ start("Downloads");
 				<img class="card-img-top" style="height: 120px; width: 80px" src="/fa/svgs/brands/windows.svg"
 					alt="installer">
 				<h5 class="card-title">Installer <span class="badge badge-secondary">Experimental</span></h5>
-				<p class="card-text">Click on the download button to download the windows Installer.</p>
+				<p class="card-text">The classical installation expierience.</p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $exeLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
