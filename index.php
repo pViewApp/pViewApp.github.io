@@ -1,22 +1,78 @@
-
 <?php 
 require_once "frame.php";
+require_once "db.php";
+$results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%.jar' ORDER BY version DESC LIMIT 1");
+$jarLinkEnding = null;
+if ($row = $results->fetch_assoc())
+	$jarLinkEnding = $row['downloadLink'];
+$results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%-windows.zip' ORDER BY version DESC LIMIT 1");
+$zipLinkEnding = null;
+if ($row = $results->fetch_assoc())
+	$zipLinkEnding = $row['downloadLink'];
+$exeLinkEnding = null;
+$results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%.exe' ORDER BY version DESC LIMIT 1");
+if ($row = $results->fetch_assoc())
+	$exeLinkEnding = $row['downloadLink'];
 start("Home");
 ?>
-	<div class="jumbotron">
-		<h1 class="display-4">Manage your portfolio seamlessly.</h1>
-		<p class="lead">pView is the all-in-one solution for managing your portfolio over time and on multiple accounts.
-		</p>
-		<hr class="my-4">
-		<div class="btn-group" role="group">
-			<a class="btn btn-primary btn-lg" href="#"
-				onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/pview-0.2.2.jar');"><i
-					class="fab fa-windows"></i> Download for Windows</a><a class="btn btn-lg btn-secondary"
-				href="/download.php" role="button">More
-				Downloads <i class="fas fa-angle-double-right"></i></a>
-		</div>
+<div class="jumbotron" style="height: 280px;">
+	<h1 class="display-4" style="font-size: 25pt;">pView helps optimize your investment portfolio.</h1>
+	<p class="lead">
+	</p>
+	<hr class="my-4">
+	<div class="btn-group" role="group">
+		<a class="btn btn-primary btn-lg"
+			onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $zipLinkEnding; ?>');"><i
+				class="fab fa-windows"></i> Download for Windows</a><a class="btn btn-lg btn-secondary"
+			href="/download.php" role="button">More
+			Downloads <i class="fas fa-angle-double-right"></i></a>
 	</div>
+
+</div>
+
+<h2 class="center-align">App Screenshot</h2>
+
+
+<img class="center-align img-lg" style="width: 946px;" src="images/pview.png" alt="Screenshot">
+
+<br>
+<br>
+
+<h2 class="center-align">Comparison</h2>
+<div class="container">
+
+
+
+
+
+	<table>
+		<tr>
+			<th style="width: 200px;">Features</th>
+			<th>pView</th>
+			<th>Broker website</th>
+			<th>3rd Party website</th>
+		</tr>
+		<tr>
+			<td>Free</td>
+			<td><i class="fa fa-check"></td>
+			<td><i class="fa fa-check"></td>
+			<td><i class="fa fa-times"></td>
+		</tr>
+		<tr>
+			<td>Multiple account reporting</td>
+			<td><i class="fa fa-check"></i></td>
+			<td><i class="fa fa-times"></i></td>
+			<td><i class="fa fa-check"></i></td>
+		</tr>
+		<tr>
+			<td>Real time quote</td>
+			<td><i class="fa fa-check"></i></td>
+			<td><i class="fa fa-times"></i></td>
+			<td><i class="fa fa-times"></i></td>
+		</tr>
+	</table>
+</div>
+</div>
 <?php
 footer();
-
 ?>

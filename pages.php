@@ -3,8 +3,8 @@
 ///
 ///
 
-$pages = array("Home", "About", "Downloads");
-$hrefs = array("/", "/about.php", "/download.php");
+$pages = array("Home", "About", "Downloads", "Manual");
+$hrefs = array("/", "/about.php", "/download.php", "/manual");
 
 ///
 ///

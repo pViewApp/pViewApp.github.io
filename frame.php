@@ -18,15 +18,15 @@ function start($activePage) {
             '; 
         }
     }
-    $start = <<<'END'
+    
+$start = <<<"END"
     <!DOCTYPE html>
     <html>
     <head>
-    <title>pView | 
-    END;
-    $start .= $activePage;
-    $start .= <<<'END'
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pView | $activePage
     </title>
+    
     <link type="text/css" rel="stylesheet" href="/fa/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -37,103 +37,102 @@ function start($activePage) {
     <link type="text/css" rel="stylesheet" href="/all.css">
     <meta charset="UTF-8">
     </head>
+    
     <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="topnav">
         <a class="navbar-brand" href="/">
-            <img src="/pview.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
             pView
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-    END;
-            $start .= $navItems;
-            $start .= '
+            <ul class="navbar-nav mr-auto">$navItems
             </ul>
+</div>
         </div>
     </nav>
-    ';
+END;
     echo $start;
 }
 function footer() {
-    $footer = <<<'END'
-    <footer class="mt-auto container-fluid footer dark bg-primary">
-    <div class="container-fluid text-center text-md-left">
+    $footer = '
+        <footer class="mt-auto container-fluid footer dark bg-primary">
+            <div class="container-fluid text-center text-md-left">
 
-       <!-- Grid row -->
-       <div class="row">
+                <!-- Grid row -->
+                <div class="row">
 
-          <!-- Grid column -->
-          <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
 
-             <!-- Content -->
-             <h5 class="text-uppercase">Manage your portfolio seamlessly.</h5>
-             <p>pView is the all-in-one solution for managing your portfolio over time and on multiple accounts.</p>
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Do you know about your investment portfolio?</h5>
+                        <p>Even more, across multiple accounts, over a period of time. pView can do that.
+                        </p>
 
-          </div>
-          <!-- Grid column -->
+                    </div>
+                    <!-- Grid column -->
 
-          <hr class="clearfix w-100 d-md-none pb-3">
+                    <hr class="clearfix w-100 d-md-none pb-3">
 
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
 
-             <ul class="list-unstyled">
-                <li>
-                   <a href="about.php">About</a>
-                </li>
-                <li>
-                   <a href="#">Download</a>
-                </li>
-                <li>
-                   <a href="index.php">Home</a>
-                </li>
-                <!--      <li>
-                         <a href="#!">Link 4</a>
-                       </li>-->
-             </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="about.php">About</a>
+                            </li>
+                            <li>
+                                <a href="download.php">Download</a>
+                            </li>
+                            <li>
+                                <a href="index.php">Home</a>
+                            </li>
+                            <!--      <li>
+                            <a href="#!">Link 4</a>
+                        </li>-->
+                        </ul>
 
-          </div>
-          <!-- Grid column -->
+                    </div>
+                    <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 mb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
 
-             <ul class="list-unstyled">
-                <li>
-                   <a href="mailto:read0wang@live.com">Contact</a>
-                </li>
-                <li>
-                   <a href="https://bitbucket.org/pview/pview-app/">Report Bugs</a>
-                </li>
-                <!--                   <li>
-                         <a href="#!">Link 3</a>
-                       </li>
-                       <li>
-                         <a href="#!">Link 4</a>
-                       </li> -->
-             </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://bitbucket.org/pview/pview-app/">Report Bugs</a>
+                            </li>
+                            <li>
+                            <a href="/manual/index.php">Manual</a>
+                        </li>
+                        <!--   
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li> -->
+                        </ul>
 
-          </div>
-          <!-- Grid column -->
+                    </div>
+                    <!-- Grid column -->
 
-       </div>
-       <!-- Grid row -->
+                </div>
+                <!-- Grid row -->
 
-    </div>
-    <!-- Footer Links -->
+            </div>
+            <!-- Footer Links -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">©pView, 2020. All rights reserved.
-    </div>
-    <!-- Copyright -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3"><img src="/favicon.ico" alt="pView logo"  width="21pt" style="margin-right: 20px">©pView, 2020. All rights reserved.
+            </div>
+            <!-- Copyright -->
 
- </footer>
- </body>
- </html>
-END;
- echo $footer;
+        </footer>
+        </body>
+
+        </html>';
+    echo $footer;
 }

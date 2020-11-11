@@ -3,14 +3,30 @@ require_once "frame.php";
 start("About");
 ?>
 
+<div class="container">
+
+  <br>
+
+  <h2>App: </h2>
+</div>
+<div class="container">
+  <hr class="my-4">
+
+  <p>pView is a Java project, also for real world use. It is under development.</p>
+
   <div class="container">
 
     <br>
 
-    <h2>About pView</h2>
-    <p>pView is the all-in-one solution for managing your portfolio over time and on multiple accounts.
-    </p>
   </div>
-  <?php
+  <h2>Team: </h2>
+</div>
+<div class="container">
+  <hr class="my-4">
+  <p>Lazy Sheep: Java programmer, developing pView.<br>
+  Chocolate Dude: Html developer, maintaining website.<br>
+  Big Bunny: DIY investor, suggesting features.</p>
+</div>
+<?php
 footer();
 ?>
