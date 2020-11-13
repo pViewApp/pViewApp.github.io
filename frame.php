@@ -23,6 +23,13 @@ $start = <<<"END"
     <!DOCTYPE html>
     <html>
     <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007bff">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>pView | $activePage
     </title>
@@ -41,7 +48,7 @@ $start = <<<"END"
     <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="topnav">
         <a class="navbar-brand" href="/">
-            <img src="/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="/favicon.ico" id="brandImage" width="30" height="30" class="d-inline-block align-top" alt="">
             pView
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -126,7 +133,7 @@ function footer() {
             <!-- Footer Links -->
 
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">©pView, 2020. All rights reserved.
+            <div class="footer-copyright text-center py-3"><i class="far fa-copyright"></i> pView, 2020. All rights reserved.
             </div>
             <!-- Copyright -->
 
@@ -135,4 +142,75 @@ function footer() {
 
         </html>';
     echo $footer;
+}
+function sidenav() {
+    $sidenav = <<< "END"
+    <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+
+        <button type="button" id="sidebarCollapse" class="btn">
+            <i class="fas fa-align-left"></i>
+            <i class="far fa-times-circle"></i>
+        </button>
+        <div class="sidebar-header" id=sidebar>
+            <h3>Manual</h3>
+        </div>
+        <div>
+            <input style="height: 51px;" type="text" class="form-control ds-input" id="navLinksSearch"
+                onfocus="this.select()" onkeyup="searchLinks()" placeholder="Search..." aria-label="Search for..."
+                autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false"
+                aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
+        </div>
+
+
+        <ul class="list-unstyled components" id="navLinks">
+
+            <li>
+                <a href="#">Add New File</a>
+            </li>
+            <li>
+                <a href="/manual/accountnew.php">Add Account</a>
+            </li>
+            <li>
+                <a href="./transactionnew.php">Add Transaction</a>
+            </li>
+            <li>
+                <a href="#">Edit Transaction</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Page Content  -->
+
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+</script>
+
+<script>
+    function searchLinks() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("navLinksSearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("navLinks");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
+END;
+echo $sidenav;
 }

@@ -15,7 +15,10 @@ start("Manual");
         <div class="sidebar-header">
             <h3>Manual</h3>
         </div>
-        <input type="text" id="navLinksSearch" onfocus="this.select()" onkeyup="searchLinks()" placeholder="Search.." title="Search...">
+        <input style="height: 51px;" type="text" class="form-control ds-input" id="navLinksSearch"
+                onfocus="this.select()" onkeyup="searchLinks()" placeholder="Search..." aria-label="Search for..."
+                autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false"
+                aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
 
         <ul class="list-unstyled components" id="navLinks">
             <li class="active">

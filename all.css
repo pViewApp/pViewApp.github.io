@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap');
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -298,7 +299,9 @@ a.article:hover {
     margin-right: auto;
   }
   .btn-group > * {
-    padding: 5px;
+    padding: 0px;
+    width: 200px;
+    font-size: 11pt !important;
   }
 }
 
@@ -402,7 +405,7 @@ tr:nth-child(even) {
 }
 
 #myBtn:hover {
-  background-color: #0069d9;;
+  background-color: #0069d9;
 }
 pre {
   overflow: visible;
@@ -411,6 +414,7 @@ pre {
   white-space: -pre-wrap;      /* Opera 4-6 */
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;    
+  font-family: 'Oxygen Mono', monospace;
 }
 ::-webkit-scrollbar {
   
@@ -435,4 +439,36 @@ pre {
   border: 2px solid transparent;
   background: #aaaaaa;
   background-clip: content-box;
+}
+#contactBody {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.submit{
+  background-color: #007bff;
+}
+.submit:hover{
+   background-color: #0069d9;
+}
+#brandImage {
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 0 0.1rem rgba(255,255,255,.5);
+  border-radius: 2px;
 }

@@ -12,7 +12,10 @@ start("About");
 <div class="container">
   <hr class="my-4">
 
-  <pre>pView is a school JavaFX project, being developed. The website uses Twitter Bootstrap.</pre>
+  <pre>
+pView is a school JavaFX project, being developed. The website uses Twitter Bootstrap.
+You can <a href="./contact.php">contact us</a>.
+</pre>
 
   <div class="container">
 

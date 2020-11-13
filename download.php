@@ -3,8 +3,12 @@ require_once "frame.php";
 require_once "downloadsTools.php";
 $results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%.jar' ORDER BY version DESC LIMIT 1");
 $jarLinkEnding = null;
-if ($row = $results->fetch_assoc())
+if ($row = $results->fetch_assoc()) {
 	$jarLinkEnding = $row['downloadLink'];
+	$latestJarDate = $row['releaseDate'];
+	$latestZipDate = $row['releaseDate'];
+	$latestInstallerDate = $row['releaseDate'];
+}
 $results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%-windows.zip' ORDER BY version DESC LIMIT 1");
 $zipLinkEnding = null;
 if ($row = $results->fetch_assoc())
@@ -39,7 +43,7 @@ start("Downloads");
 	<br>
 
 	<h2>Download pView: </h2>
-	<p>Jar files requires <a target="_blank" href="https://adoptopenjdk.net/">Java 11.0.7</a> or higher.</p>
+	<p>Jar files requires the latest<a target="_blank" href="https://adoptopenjdk.net/"> Java 11</a> or higher.</p>
 </div>
 <div class="container">
 	<hr class="my-4">
@@ -52,6 +56,7 @@ start("Downloads");
 					alt="zip">
 				<h5 class="card-title">Zip <span class="badge badge-secondary">Recommended</span></h5>
 				<p class="card-text">Works on Pc.</p>
+				<p class="card-text">Released: <?php echo $latestZipDate; ?>.</p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $zipLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
@@ -62,6 +67,7 @@ start("Downloads");
 				<img class="card-img-top" style="height: 120px; width: 80px" src="/fa/svgs/brands/java.svg" alt="java">
 				<h5 class="card-title">Jar <span class="badge badge-secondary">For Power Users</span></h5>
 				<p class="card-text">Light weight bundle for those who have Java.</p>
+				<p class="card-text">Released: <?php echo $latestJarDate; ?>.</p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $jarLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
@@ -73,6 +79,7 @@ start("Downloads");
 					alt="installer">
 				<h5 class="card-title">Installer <span class="badge badge-secondary">Experimental</span></h5>
 				<p class="card-text">The classical installation expierience.</p>
+				<p class="card-text">Released: <?php echo $latestInstallerDate; ?>.</p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $exeLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>

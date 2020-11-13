@@ -21,9 +21,9 @@ start("Home");
 	</p>
 	<hr class="my-4">
 	<div class="btn-group" role="group">
-		<a class="btn btn-primary btn-lg" style="font-size: 12pt;"
+		<a class="btn btn-primary btn-lg" style="font-size: 13.2pt;"
 			onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $zipLinkEnding; ?>');"><i
-				class="fab fa-windows"></i> Download for Windows</a><a class="btn btn-lg btn-secondary" style="font-size: 12pt;"
+				class="fab fa-windows"></i> Download for Windows</a><a class="btn btn-lg btn-secondary" style="font-size: 13.2pt;"
 			href="/download.php" role="button">More
 			Downloads <i class="fas fa-angle-double-right"></i></a>
 	</div>
