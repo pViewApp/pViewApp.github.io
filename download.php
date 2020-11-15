@@ -8,6 +8,9 @@ if ($row = $results->fetch_assoc()) {
 	$latestJarDate = $row['releaseDate'];
 	$latestZipDate = $row['releaseDate'];
 	$latestInstallerDate = $row['releaseDate'];
+	$latestJarVersion = $row['version'];
+	$latestInstallerVersion = $row['version'];
+	$latestZipVersion = $row['version'];
 }
 $results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%-windows.zip' ORDER BY version DESC LIMIT 1");
 $zipLinkEnding = null;
@@ -57,6 +60,7 @@ start("Downloads");
 				<h5 class="card-title">Zip <span class="badge badge-secondary">Recommended</span></h5>
 				<p class="card-text">Works on Pc.</p>
 				<p class="card-text">Released: <?php echo $latestZipDate; ?>.</p>
+				<p class="card-text">Version: <?php echo $latestZipVersion; ?></p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $zipLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
@@ -68,6 +72,7 @@ start("Downloads");
 				<h5 class="card-title">Jar <span class="badge badge-secondary">For Power Users</span></h5>
 				<p class="card-text">Light weight bundle for those who have Java.</p>
 				<p class="card-text">Released: <?php echo $latestJarDate; ?>.</p>
+				<p class="card-text">Version: <?php echo $latestJarVersion; ?></p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $jarLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
@@ -80,6 +85,7 @@ start("Downloads");
 				<h5 class="card-title">Installer <span class="badge badge-secondary">Experimental</span></h5>
 				<p class="card-text">The classical installation expierience.</p>
 				<p class="card-text">Released: <?php echo $latestInstallerDate; ?>.</p>
+				<p class="card-text">Version: <?php echo $latestInstallerVersion; ?></p>
 				<a class="btn btn-primary"
 					onclick="window.location.assign('https://bitbucket.org/pview/pview-downloads/downloads/<?php echo $exeLinkEnding; ?>')"><i
 						class="fas fa-download"></i> Download</a>
