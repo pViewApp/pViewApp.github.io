@@ -58,7 +58,7 @@ start("Downloads");
 				<img class="card-img-top" style="height: 120px; width: 80px" src="/fa/svgs/solid/file-archive.svg"
 					alt="zip">
 				<h5 class="card-title">Zip <span class="badge badge-secondary">Recommended</span></h5>
-				<p class="card-text">Works on Pc.</p>
+				<p class="card-text">Works on PC.</p>
 				<p class="card-text">Released: <?php echo $latestZipDate; ?>.</p>
 				<p class="card-text">Version: <?php echo $latestZipVersion; ?></p>
 				<a class="btn btn-primary"

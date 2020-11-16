@@ -397,7 +397,7 @@ tr:nth-child(even) {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #007bff;
+  background-color: #006aff;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -471,4 +471,11 @@ input[type=text], input[type=email], select, textarea {
   border-color: white;
   box-shadow: 0 0 0 0.1rem rgba(255,255,255,.5);
   border-radius: 2px;
+}
+.clear{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  display: block;
+  margin-right: 20px;
 }

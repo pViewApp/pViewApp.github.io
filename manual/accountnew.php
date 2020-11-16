@@ -21,7 +21,6 @@ start("Manual");
                 aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
 
         <ul class="list-unstyled components" id="navLinks">
-            <li class="active">
 
             <li>
                 <a href="./index.php">Add New File</a>

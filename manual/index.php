@@ -16,10 +16,11 @@ start("Manual");
             <h3>Manual</h3>
         </div>
         <div>
-            <input style="height: 51px;" type="text" class="form-control ds-input" id="navLinksSearch"
+            <input style="height: 51px;" type="text" id="navLinksSearch"
                 onfocus="this.select()" onkeyup="searchLinks()" placeholder="Search..." aria-label="Search for..."
                 autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false"
-                aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
+                aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"  >
+
         </div>
 
 
@@ -29,7 +30,7 @@ start("Manual");
                 <a href="#">Add New File</a>
             </li>
             <li>
-                <a href="/manual/accountnew.php">Add Account</a>
+                <a href="./accountnew.php">Add Account</a>
             </li>
             <li>
                 <a href="./transactionnew.php">Add Transaction</a>
