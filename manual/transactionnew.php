@@ -12,10 +12,10 @@ start("Manual");
                     <i class="fas fa-align-left"></i>
                     <i class="far fa-times-circle"></i>
                 </button>
-                <div class="sidebar-header" id=sidebar>
-                    <h3>Manual</h3>
-                </div>
-                <input style="height: 51px;" type="text" class="form-control ds-input" id="navLinksSearch"
+                <div class="sidebar-header">
+            <h2><a class="center-align" style="margin-right: 20px;"href="./index.php">Manual</a></h2>
+        </div>
+        <input style="height: 51px;" type="text" class="searchbox" id="navLinksSearch" 
                 onfocus="this.select()" onkeyup="searchLinks()" placeholder="Search..." aria-label="Search for..."
                 autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false"
                 aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">

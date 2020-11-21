@@ -3,7 +3,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  border-weight: 3px;
   border-color: #353635;
   margin-bottom: 20px;
 }
@@ -44,10 +43,6 @@ tr:nth-child(even) {
 
 .a:hover {
   text-decoration: underline;
-}
-
-.btn {
-  margin-bottom: 10px;
 }
 
 .center-align {
@@ -289,7 +284,7 @@ a.article:hover {
   margin-right: auto;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .navbar-nav * {
     font-size: 12pt !important;
   }
@@ -299,8 +294,7 @@ a.article:hover {
     margin-right: auto;
   }
   .btn-group > * {
-    padding: 0px;
-    width: 200px;
+    padding: 4px;
     font-size: 11pt !important;
   }
 }
@@ -428,7 +422,7 @@ pre {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #cccccc; 
-  background-clip: content-box;
+  background-clip: content-box !important;
   border-radius: 10px;
   border: 3px solid transparent;
   border-radius: 9px;
@@ -439,6 +433,9 @@ pre {
   border: 2px solid transparent;
   background: #aaaaaa;
   background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:active{
+  background: #808080;
 }
 #contactBody {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
@@ -478,4 +475,14 @@ input[type=text], input[type=email], select, textarea {
   text-align: center;
   display: block;
   margin-right: 20px;
+}
+.searchbox{
+  margin-top: 0px !important;
+  border-radius: 0px !important;
+}
+.cb-label {
+  margin-left: 10px;
+}
+label {
+  user-select: none;
 }

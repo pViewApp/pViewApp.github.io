@@ -15,7 +15,7 @@ if ($row = $results->fetch_assoc())
 	$exeLinkEnding = $row['downloadLink'];
 start("Home");
 ?>
-<div class="jumbotron" style="height: 220px;">
+<div class="jumbotron">
 	<h1 class="display-4" style="font-size: 25pt;">pView helps optimize your investment portfolio.</h1>
 	<p class="lead">
 	</p>
@@ -33,7 +33,7 @@ start("Home");
 <h2 class="center-align">App Screenshot</h2>
 
 
-<img class="center-align img-lg" style="width: 946px;" src="images/pview.png" alt="Screenshot">
+<img class="center-align img-lg" style="width: 80%; max-width: 946px; margin-bottom: 40px;" src="images/pview.png" alt="Screenshot">
 
 <br>
 <br>

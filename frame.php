@@ -46,6 +46,7 @@ $start = <<<"END"
     </head>
     
     <body class="d-flex flex-column min-vh-100">
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="topnav">
         <a class="navbar-brand" href="/">
             <img src="/favicon.ico" id="brandImage" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -112,15 +113,14 @@ function footer() {
 
                         <ul class="list-unstyled">
                             <li>
-                                <a href="https://bitbucket.org/pview/pview-app/">Report Bugs</a>
+                                <a href="https://github.com/pViewCorp/bugs/issues/new/choose">Report Bugs</a>
                             </li>
                             <li>
                             <a href="/manual/index.php">Manual</a>
-                        </li>
-                        <!--   
+                        </li>  
                         <li>
-                            <a href="#!">Link 4</a>
-                        </li> -->
+                            <a href="/contact.php">Contact</a>
+                        </li>
                         </ul>
 
                     </div>
