@@ -33,7 +33,16 @@ $start = <<<"END"
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>pView | $activePage
     </title>
-    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6LYME6PS7B"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-6LYME6PS7B');
+        </script>
     <link type="text/css" rel="stylesheet" href="/fa/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -46,8 +55,7 @@ $start = <<<"END"
     </head>
     
     <body class="d-flex flex-column min-vh-100">
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="topnav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="topnav" style="user-select: none; width: 100%;">
         <a class="navbar-brand" href="/">
             <img src="/favicon.ico" id="brandImage" width="30" height="30" class="d-inline-block align-top" alt="">
             pView
@@ -68,7 +76,7 @@ END;
 }
 function footer() {
     $footer = '
-        <footer class="mt-auto container-fluid footer dark bg-primary" style="width="100%">
+        <footer class="mt-auto container-fluid footer dark bg-primary" style="width: 100%;>
             <div class="container-fluid text-center text-md-left">
 
                 <!-- Grid row -->

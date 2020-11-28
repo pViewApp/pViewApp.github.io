@@ -15,7 +15,7 @@ if ($row = $results->fetch_assoc())
 	$exeLinkEnding = $row['downloadLink'];
 start("Home");
 ?>
-<div class="jumbotron">
+<div class="jumbotron" style="background-image: url(''); color: black;">
 	<h1 class="display-4" style="font-size: 25pt;">pView helps optimize your investment portfolio.</h1>
 	<p class="lead">
 	</p>

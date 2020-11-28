@@ -27,7 +27,7 @@ start("Contact");
 
             <br>
             <label for="message">Description</label>
-            <textarea id="message" name="message" placeholder="Write something..." maxlength="4000" style="height:200px" title="This text will be sent to pView."
+            <textarea id="message" name="message" placeholder="Your message..." maxlength="4000" style="height:200px" title="This text will be sent to pView."
                 required></textarea>
 
             <br>
