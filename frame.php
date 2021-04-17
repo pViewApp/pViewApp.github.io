@@ -76,7 +76,7 @@ END;
 }
 function footer() {
     $footer = '
-        <footer class="mt-auto container-fluid footer dark bg-primary" style="width: 100%;>
+        <footer class="mt-auto container-fluid footer dark bg-primary" style="width: 100%;">
             <div class="container-fluid text-center text-md-left">
 
                 <!-- Grid row -->

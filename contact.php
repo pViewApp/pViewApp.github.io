@@ -43,10 +43,6 @@ start("Contact");
         </form>
     </div>
 
-</body>
-
-</html>
-
 <?php
 footer();
 ?>

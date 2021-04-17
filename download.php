@@ -12,7 +12,7 @@ if ($row = $results->fetch_assoc()) {
 	$latestInstallerVersion = $row['version'];
 	$latestZipVersion = $row['version'];
 }
-$results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%-windows.zip' ORDER BY version DESC LIMIT 1");
+$results = $conn->query("SELECT * FROM versions WHERE downloadLink LIKE '%-win.zip' ORDER BY version DESC LIMIT 1");
 $zipLinkEnding = null;
 if ($row = $results->fetch_assoc())
 	$zipLinkEnding = $row['downloadLink'];
@@ -66,7 +66,7 @@ start("Downloads");
 						class="fas fa-download"></i> Download</a>
 			</div>
 		</div>
-		<div class="card col-sm downloadCard recommended">
+		<div class="card col-sm recommended downloadCard">
 			<div class="card-body">
 				<img class="card-img-top" style="height: 120px; width: 80px" src="/fa/svgs/solid/file-archive.svg"
 					alt="zip">

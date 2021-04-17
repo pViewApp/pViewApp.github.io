@@ -440,6 +440,8 @@ pre {
   border: 2px solid transparent;
   background: #aaaaaa;
   background-clip: content-box;
+  cursor: pointer !important;
+  width: 20px !important;
 }
 ::-webkit-scrollbar-thumb:active{
   background: #808080;
@@ -522,4 +524,13 @@ input:active{
 }
 br{
   user-select: none;
+}
+
+.footer + div {
+  height: 0 !important;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
 }
