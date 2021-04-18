@@ -110,17 +110,11 @@ function getFooter() {
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="about.php">About</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="download.php">Download</a>
+                        <a href="/downloads.html">Downloads</a>
                     </li>
-                    <li>
-                        <a href="index.php">Home</a>
-                    </li>
-                    <!--      <li>
-                    <a href="#!">Link 4</a>
-                </li>-->
                 </ul>
 
             </div>
@@ -131,14 +125,12 @@ function getFooter() {
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="https://github.com/pViewCorp/bugs/issues/new/choose">Report Bugs</a>
+                        <a href="https://github.com/pViewApp/bugs/issues/new/choose">Report Bugs</a>
                     </li>
                     <li>
-                    <a href="/manual/index.php">Manual</a>
-                </li>  
-                <li>
-                    <a href="/contact.php">Contact</a>
-                </li>
+                        <i class="far fa-envelope"></i>
+                        <b>pviewapp@gmail.com</b>
+                     </li>  
                 </ul>
 
             </div>
