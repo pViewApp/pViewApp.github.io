@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/frame.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("head").append(getHead("Home"))
+                $("header").append(getHeader("Home"))
+
+                $("footer").append(getFooter())
+            })
+        </script>
+        <script src="/js/downloads.js"></script>
+    </head>
+    
+    <body class="d-flex flex-column min-vh-100">
+        <header>
+
+        </header>
+
+        <!-- START MAIN -->
+        <div class="jumbotron" style="background-image: url(''); color: black;">
+            <h1 class="display-4" style="font-size: 25pt;">pView helps optimize your investment portfolio.</h1>
+            <p class="lead">
+            </p>
+            <hr class="my-4">
+            <div class="btn-group" role="group">
+                <a class="btn btn-primary btn-lg download-zip" style="font-size: 13.2pt;"><i
+                        class="fab fa-windows"></i> Download for Windows</a><a class="btn btn-lg btn-secondary" style="font-size: 13.2pt;"
+                    href="/downloads.html" role="button">More
+                    Downloads <i class="fas fa-angle-double-right"></i></a>
+            </div>
+        
+        </div>
+
+        <h2 class="center-align">App Screenshot</h2>
+
+
+<img class="center-align img-lg" style="width: 80%; max-width: 946px; margin-bottom: 40px;" src="images/pview.png" alt="Screenshot">
+
+<br>
+<br>
+
+<h2 class="center-align">Comparison</h2>
+<div class="container">
+
+
+
+
+
+	<table>
+		<tr>
+			<th style="width: 200px;">Features</th>
+			<th>pView</th>
+			<th>Broker</th>
+			<th>3rd Party</th>
+		</tr>
+		<tr>
+			<td>Free</td>
+			<td><i class="fa fa-check"></td>
+			<td><i class="fa fa-check"></td>
+			<td><i class="fa fa-times"></td>
+		</tr>
+		<tr>
+			<td>Multiple account reporting</td>
+			<td><i class="fa fa-check"></i></td>
+			<td><i class="fa fa-times"></i></td>
+			<td><i class="fa fa-check"></i></td>
+		</tr>
+		<tr>
+			<td>Real time quote</td>
+			<td><i class="fa fa-check"></i></td>
+			<td><i class="fa fa-times"></i></td>
+			<td><i class="fa fa-times"></i></td>
+		</tr>
+	</table>
+</div>
+</div>
+
+
+
+
+        <!-- END MAIN -->
+
+    <footer class="mt-auto container-fluid footer dark bg-primary" style="width: 100%;">
+    </footer>
+    </body>
+</html>
