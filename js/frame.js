@@ -13,7 +13,7 @@ function getHeader(page) {
         if (pageName == page) {
             navItems += `
             <li class="nav-item">
-            <a class="nav-link active" href="${page[pageName]}">${pageName}</a>
+            <a class="nav-link active" href="${pages[pageName]}">${pageName}</a>
             </li>
             `
         } else {
@@ -129,8 +129,8 @@ function getFooter() {
                     </li>
                     <li>
                         <i class="far fa-envelope"></i>
-                        <b>pviewapp@gmail.com</b>
-                     </li>  
+                        <b>pViewApp@gmail.com</b>
+                    </li>  
                 </ul>
 
             </div>
