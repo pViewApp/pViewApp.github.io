@@ -12,7 +12,6 @@ $(document).ready(function() {
   $.ajax(
     {
       url: "https://api.bitbucket.org/2.0/repositories/pview/pview-downloads/downloads/",
-      async: false,
       success: function (result) {
 
         var values = result["values"]
