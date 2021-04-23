@@ -1,3 +1,4 @@
+"use strict";
 var pages = {
     "Home" : "/",
     "Downloads" : "/downloads.html"
@@ -129,9 +130,14 @@ function getFooter() {
                     </li>
                     <li>
                         <i class="far fa-envelope"></i>
-                        <b>pViewApp@gmail.com</b>
+                        <b id="email"></b>
                     </li>  
                 </ul>
+                <script>
+                    $("#email").append("pViewA");
+                    $("#email").append("<!-- Comment -->");
+                    $("#email").append("pp&#64;gmail.com");
+                </script>
 
             </div>
             <!-- Grid column -->

@@ -1,3 +1,4 @@
+"use strict";
 var downloads = {
   "zip" : "",
   "msi" : "",
@@ -16,7 +17,6 @@ $(document).ready(function() {
 
         var values = result["values"]
 
-        downloadsLoop:
         for (var i = 0; i < values.length; i++) {
           var value = values[i]
           var href = value["links"]["self"]["href"];
