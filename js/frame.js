@@ -1,3 +1,4 @@
+"use strict";
 var pages = {
     "Home" : "/",
     "Downloads" : "/downloads.html"
@@ -13,7 +14,7 @@ function getHeader(page) {
         if (pageName == page) {
             navItems += `
             <li class="nav-item">
-            <a class="nav-link active" href="${page[pageName]}">${pageName}</a>
+            <a class="nav-link active" href="${pages[pageName]}">${pageName}</a>
             </li>
             `
         } else {
@@ -110,17 +111,11 @@ function getFooter() {
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="about.php">About</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="download.php">Download</a>
+                        <a href="/downloads.html">Downloads</a>
                     </li>
-                    <li>
-                        <a href="index.php">Home</a>
-                    </li>
-                    <!--      <li>
-                    <a href="#!">Link 4</a>
-                </li>-->
                 </ul>
 
             </div>
@@ -131,15 +126,18 @@ function getFooter() {
 
                 <ul class="list-unstyled">
                     <li>
-                        <a href="https://github.com/pViewCorp/bugs/issues/new/choose">Report Bugs</a>
+                        <a href="https://github.com/pViewApp/bugs/issues/new/choose">Report Bugs</a>
                     </li>
                     <li>
-                    <a href="/manual/index.php">Manual</a>
-                </li>  
-                <li>
-                    <a href="/contact.php">Contact</a>
-                </li>
+                        <i class="far fa-envelope"></i>
+                        <b id="email"></b>
+                    </li>  
                 </ul>
+                <script>
+                    $("#email").append("pViewA");
+                    $("#email").append("<!-- Comment -->");
+                    $("#email").append("pp&#64;gmail.com");
+                </script>
 
             </div>
             <!-- Grid column -->

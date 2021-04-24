@@ -1,3 +1,4 @@
+"use strict";
 var downloads = {
   "zip" : "",
   "msi" : "",
@@ -12,12 +13,10 @@ $(document).ready(function() {
   $.ajax(
     {
       url: "https://api.bitbucket.org/2.0/repositories/pview/pview-downloads/downloads/",
-      async: false,
       success: function (result) {
 
         var values = result["values"]
 
-        downloadsLoop:
         for (var i = 0; i < values.length; i++) {
           var value = values[i]
           var href = value["links"]["self"]["href"];
