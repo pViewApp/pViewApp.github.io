@@ -45,7 +45,7 @@ start("Home");
 
 
 
-	<table>
+<!--	<table>
 		<tr>
 			<th style="width: 200px;">Features</th>
 			<th>pView</th>
@@ -70,7 +70,7 @@ start("Home");
 			<td><i class="fa fa-times"></i></td>
 			<td><i class="fa fa-times"></i></td>
 		</tr>
-	</table>
+	</table> -->
 </div>
 </div>
 <?php
