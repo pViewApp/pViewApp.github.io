@@ -113,6 +113,9 @@ function getFooter() {
                     <li>
                         <a href="/">Home</a>
                     </li>
+                    <li>
+                    <a href="https://github.com/pViewApp/bugs/issues/new/choose">Report Bugs</a>
+                </li>
                 </ul>
 
             </div>
@@ -122,9 +125,6 @@ function getFooter() {
             <div class="col-md-3 mb-md-0 mb-3">
 
                 <ul class="list-unstyled">
-                    <li>
-                        <a href="https://github.com/pViewApp/bugs/issues/new/choose">Report Bugs</a>
-                    </li>
                     <li>
                         <i class="far fa-envelope"></i>
                         <b id="email"></b>
