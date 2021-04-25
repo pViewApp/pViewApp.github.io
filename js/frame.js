@@ -1,7 +1,7 @@
 "use strict";
 var pages = {
-    "Home" : "/",
-    "Downloads" : "/downloads.html"
+    "Home" : "/"
+
 }
 
 function getHeader(page) {
@@ -112,9 +112,6 @@ function getFooter() {
                 <ul class="list-unstyled">
                     <li>
                         <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/downloads.html">Downloads</a>
                     </li>
                 </ul>
 
