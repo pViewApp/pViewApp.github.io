@@ -534,3 +534,6 @@ br{
   flex: 1 1 auto;
   padding: 1.25rem;
 }
+img {
+  width: 85%;
+}
